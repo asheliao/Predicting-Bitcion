@@ -1,15 +1,16 @@
-# 以傳統均線法和MACD預測比特幣之最佳買點
+# 以傳統均線法(MA)和指數平滑異同移動平均線(MACD)
+# 預測比特幣之最佳買點
 predicting-bitcion-best-buying-point-with python pandas, MA, MACD
 
 ## Code details
 
-#### Import packages
+### Import packages
 * requests, BeautifulSoup for web clawler
 * re, json for preprocess cleaning
 * pandas for buliding dataframe
 * matlibplot, pandas for plot
 
-#### Calculate MA, EMA
+### Calculate MA, EMA
 ```
 ma_list = [12, 26]
 for ma in ma_list:
@@ -20,7 +21,7 @@ for ma in ma_list:
 * MA for Moving Average 12d / 26d
 * EMA for Exponential Moving Averages 12d / 26d
 
-#### Calculate DIF, DEM
+### Calculate DIF, DEM
 ```
 df['dif'] = df['EMA_12'] - df['EMA_26']
 df["dem"] = df["dif"].ewm(span = 9).mean()
