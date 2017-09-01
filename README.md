@@ -2,6 +2,7 @@
 Predicting the best buying point of bitcoin with Python Pandas / MA / MACD
 <br />
 
+### [Bitcoin price source]https://www.coingecko.com/zh-tw
 
 ### Import packages
 * requests, BeautifulSoup for web clawler
