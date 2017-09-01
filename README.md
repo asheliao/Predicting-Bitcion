@@ -31,7 +31,7 @@ df["dem"] = df["dif"].ewm(span = 9).mean()
 ## Strategy
 
 * If `MA_12` and `MA_26` across through the price line upward ,then buy in bitcoin, vice versa.
-* If `dif` across through `dem` upward buy in bitcoin, vice versa.
+* If `dif` across through `dem` upward, then buy in bitcoin, vice versa.
 
 
 ## License
