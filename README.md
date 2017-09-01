@@ -1,5 +1,5 @@
-# 以傳統均線法(MA)和指數平滑異同<br />移動平均線(MACD)預測比特幣之最佳買點
-  predicting-bitcion-best-buying-point-with python pandas, MA, MACD
+# 以傳統均線法(MA)和指數平滑異同移動平均線(MACD)<br />預測比特幣之最佳買點
+###  predicting-bitcion-best-buying-point-with python pandas, MA, MACD
 
 ***
 
