@@ -1,13 +1,15 @@
 # 以傳統均線法和MACD預測比特幣之最佳買點
 predicting-bitcion-best-buying-point-with python pandas, MA, MACD
 
-### Import packages
+## Code details
+
+#### Import packages
 * requests, BeautifulSoup for web clawler
 * re, json for preprocess cleaning
 * pandas for buliding dataframe
 * matlibplot, pandas for plot
 
-### Calculate MA, EMA
+#### Calculate MA, EMA
 ```
 ma_list = [12, 26]
 for ma in ma_list:
@@ -18,7 +20,7 @@ for ma in ma_list:
 * MA for Moving Average 12d / 26d
 * EMA for Exponential Moving Averages 12d / 26d
 
-### Calculate DIF, DEM
+#### Calculate DIF, DEM
 ```
 df['dif'] = df['EMA_12'] - df['EMA_26']
 df["dem"] = df["dif"].ewm(span = 9).mean()
@@ -28,6 +30,9 @@ df["dem"] = df["dif"].ewm(span = 9).mean()
 
 ## Strategy
 
+* if MA_12 and MA_26 across through the price line upward ,then buy in bitcoin, vice versa.
+* if DIF across through DEM upward buy in bitcoin, vice versa.
+
 
 ## License
 
@@ -35,6 +40,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* references: largitdata.com 
+* Dedicate to National Taiwan University Department of Economics
+* love & peace
