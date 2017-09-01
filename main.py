@@ -40,14 +40,18 @@ for ma in ma_list:
     df['EMA_' + str(ma)] = df["twd"].ewm(span = ma).mean()
 for ma in ma_list:
     df['MA_' + str(ma)] = df["twd"].rolling(window = ma).mean()
-In [7]:
+    
+
 # calculate DIF, DEM
 df['dif'] = df['EMA_12'] - df['EMA_26']
 df["dem"] = df["dif"].ewm(span = 9).mean()
-In [8]:
+
+
 # plot for Moving Average
 df2 = df[df["time"] >= fin1]
 df2[["twd","MA_12"]].plot(kind = "line", figsize = [20, 5])
+
+
 # plot  for Moving Average Convergence / Divergence
 df2[['twd']].plot(kind = "line", figsize = [20, 5], fontsize = 10)
 df2[['dif','dem']].plot(kind = "line", figsize = [20,5], fontsize = 10)
