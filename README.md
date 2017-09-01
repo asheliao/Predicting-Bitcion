@@ -26,3 +26,15 @@ df["dem"] = df["dif"].ewm(span = 9).mean()
 * DIF for difference between EMA_12 and EMA_26
 * DEM for signal line, using DIF and calculate for its exponential moving average 9d
 
+## Strategy
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
