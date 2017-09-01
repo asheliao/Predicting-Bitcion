@@ -1,5 +1,5 @@
 # 以傳統均線法(MA)和指數平滑異同移動平均線(MACD)<br />預測比特幣之最佳買點
-Predicting the best buying point of bitcoin with python pandas / MA / MACD
+Predicting the best buying point of bitcoin with Python Pandas / MA / MACD
 <br />
 
 
