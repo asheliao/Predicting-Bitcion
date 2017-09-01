@@ -2,10 +2,10 @@
 predicting-bitcion-best-buying-point-with python pandas, MA, MACD
 
 ### Import packages
-*requests, BeautifulSoup for web clawler
-*re, json for preprocess cleaning
-*pandas for buliding dataframe
-*matlibplot, pandas for plot
+* requests, BeautifulSoup for web clawler
+* re, json for preprocess cleaning
+* pandas for buliding dataframe
+* matlibplot, pandas for plot
 
 ### Calculate MA, EMA
 ```
