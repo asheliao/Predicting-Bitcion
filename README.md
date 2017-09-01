@@ -17,21 +17,21 @@ for ma in ma_list:
 for ma in ma_list:
     df['MA_' + str(ma)] = df["twd"].rolling(window = ma).mean()
 ```
-* MA for Moving Average 12d / 26d
-* EMA for Exponential Moving Averages 12d / 26d
+* `MA` for Moving Average 12d / 26d
+* `EMA` for Exponential Moving Averages 12d / 26d
 
 ### Calculate DIF, DEM
 ```
 df['dif'] = df['EMA_12'] - df['EMA_26']
 df["dem"] = df["dif"].ewm(span = 9).mean()
 ```
-* DIF for difference between EMA_12 and EMA_26
-* DEM for signal line, using DIF and calculate for its exponential moving average 9d
+* `dif` for difference between EMA_12 and EMA_26
+* `dem` for signal line, using DIF and calculate for its exponential moving average 9d
 
 ## Strategy
 
-* If MA_12 and MA_26 across through the price line upward ,then buy in bitcoin, vice versa.
-* If DIF across through DEM upward buy in bitcoin, vice versa.
+* If `MA_12` and `MA_26` across through the price line upward ,then buy in bitcoin, vice versa.
+* If `dif` across through `dem` upward buy in bitcoin, vice versa.
 
 
 ## License
