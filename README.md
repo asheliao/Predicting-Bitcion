@@ -43,7 +43,5 @@ df["dem"] = df["dif"].ewm(span = 9).mean()
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
 * references: largitdata.com 
-* Dedicate to National Taiwan University Department of Economics
-* love & peace
+
